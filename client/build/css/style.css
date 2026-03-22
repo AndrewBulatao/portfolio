@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Ghibli';
+  src: url('../fonts/ghibli.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Ghibli';
+  src: url('../fonts/ghibli-bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ghibli', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #d0a25d;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  min-height: 100vh;
+  padding: 120px 20px;
+}
+
+#home {
+  background: #c59450;
+}
+
+#about {
+  background: #599352;
+}
+
+#projects {
+  background: #a8843a;
+}
