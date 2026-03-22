@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Node (if you ever use it)
+node_modules/
+
+# Build files (optional)
+build/
+dist/
