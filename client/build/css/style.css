@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Ghibli';
-  src: url('../fonts/ghibli.otf') format('opentype');
+  src: url('../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf') format('opentype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Ghibli';
-  src: url('../fonts/ghibli-bold.otf') format('opentype');
+  src: url('../fonts/Eyad\ Al-Samman\ -\ Ghibli-Bold.otf') format('opentype');
   font-weight: bold;
 }
 
@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Ghibli', sans-serif;
+  font-family: 'Ghibli', 'Times New Roman', Times, serif;
 }
 
 .header {
