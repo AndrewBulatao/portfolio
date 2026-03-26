@@ -17,6 +17,13 @@ html {
 body {
   margin: 0;
   font-family: 'Ghibli', 'Times New Roman', Times, serif;
+  cursor: url('/client/build/images/bird_resized_spirit.png') 16 16, auto;
+}
+
+a:hover,
+button:hover,
+.project-card:hover {
+  cursor: url('/client/build/images/mouse_resized_spirit.png') 16 16, pointer;
 }
 
 .header {
@@ -40,6 +47,8 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  cursor: url('/client/build/images/mouse_resized_spirit.png') 16 16, pointer;
+
 }
 
 section {
