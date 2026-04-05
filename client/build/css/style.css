@@ -1,69 +1,129 @@
 @font-face {
   font-family: 'Ghibli';
-  src: url('../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf') format('opentype');
+  src: url('../fonts/Eyad Al-Samman - Ghibli.otf') format('opentype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Ghibli';
-  src: url('../fonts/Eyad\ Al-Samman\ -\ Ghibli-Bold.otf') format('opentype');
+  src: url('../fonts/Eyad Al-Samman - Ghibli-Bold.otf') format('opentype');
   font-weight: bold;
 }
 
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Ghibli', 'Times New Roman', Times, serif;
+
+  /* Custom cursor */
   cursor: url('/client/build/images/bird_resized_spirit.png') 16 16, auto;
+
+  /* Soft background fallback */
+  background-color: #fef6e4;
 }
 
+/* Hover cursor */
 a:hover,
 button:hover,
 .project-card:hover {
   cursor: url('/client/build/images/mouse_resized_spirit.png') 16 16, pointer;
 }
 
+/* NAVBAR (glass effect) */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #d0a25d;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 15px 20px;
+  z-index: 1000;
 }
 
+/* Nav layout */
 .nav {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 25px;
   padding: 0;
   margin: 0;
 }
 
+/* Nav links */
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: #333;
   font-weight: bold;
-  cursor: url('/client/build/images/mouse_resized_spirit.png') 16 16, pointer;
-
+  position: relative;
 }
 
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #88c9a1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Sections */
 section {
   min-height: 100vh;
   padding: 120px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  animation: fadeIn 1s ease-in;
 }
 
+/* Ghibli-style backgrounds */
 #home {
-  background: #c59450;
+  background: linear-gradient(to bottom, #cfe9ff, #fef6e4);
 }
 
 #about {
-  background: #599352;
+  background: #e8f5e9;
 }
 
 #projects {
-  background: #a8843a;
+  background: #fdf1d6;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
