@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
   font-family: 'Ghibli';
   src: url('../fonts/Eyad Al-Samman - Ghibli.otf') format('opentype');
@@ -10,44 +11,38 @@
   font-weight: bold;
 }
 
-/* Smooth scroll */
+/* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
 }
 
-/* Base styles */
+/* BODY */
 body {
   margin: 0;
   font-family: 'Ghibli', 'Times New Roman', Times, serif;
-
-  /* Custom cursor */
   cursor: url('/client/build/images/bird_resized_spirit.png') 16 16, auto;
-
-  /* Soft background fallback */
   background-color: #fef6e4;
 }
 
-/* Hover cursor */
+/* HOVER CURSORS */
 a:hover,
 button:hover,
 .project-card:hover {
   cursor: url('/client/build/images/mouse_resized_spirit.png') 16 16, pointer;
 }
 
-/* NAVBAR (glass effect) */
+/* NAVBAR */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-
   padding: 15px 20px;
   z-index: 1000;
 }
 
-/* Nav layout */
+/* Nav list */
 .nav {
   display: flex;
   list-style: none;
@@ -64,7 +59,7 @@ button:hover,
   position: relative;
 }
 
-/* Underline animation */
+/* Underline hover animation */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -80,16 +75,23 @@ button:hover,
   width: 100%;
 }
 
-/* Sections */
+/* SECTIONS - start hidden for scroll fade-in */
 section {
   min-height: 100vh;
   padding: 120px 20px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  animation: fadeIn 1s ease-in;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When section is visible */
+section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Ghibli-style backgrounds */
@@ -116,14 +118,45 @@ p {
   line-height: 1.6;
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Project cards (horizontal scroll) */
+.projects-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.projects-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  flex: 0 0 300px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  cursor: url('../images/mouse_resized_spirit.png') 16 16, pointer;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #4a7c59;
+  font-weight: bold;
 }
