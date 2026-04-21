@@ -42,6 +42,14 @@ button:hover,
   z-index: 1000;
 }
 
+section h1 {
+  position: absolute;
+  top: 30px;   
+  left: 30px;
+  margin: 0;
+  font-size: 30px;
+}
+
 /* Nav list */
 .nav {
   display: flex;
@@ -85,7 +93,7 @@ section {
 
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 2.0s ease, transform 0.8s ease;
 }
 
 /* When section is visible */
