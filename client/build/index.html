@@ -103,5 +103,25 @@
     };
   </script>
 
+  <script>
+  const header = document.querySelector(".header");
+
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      // scrolling DOWN → hide navbar
+      header.classList.add("hide");
+    } else {
+      // scrolling UP → show navbar
+      header.classList.remove("hide");
+    }
+
+    lastScrollY = currentScrollY;
+  });
+  </script>
+
 </body>
 </html>
