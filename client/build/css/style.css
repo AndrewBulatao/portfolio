@@ -24,6 +24,12 @@ body {
   background-color: #fef6e4;
 }
 
+p {
+  position: static;
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
 /* HOVER CURSORS */
 a:hover,
 button:hover,
@@ -119,6 +125,9 @@ section.show {
   top: 155px;
   left: 30px;
   margin: 0;
+
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 #about {
@@ -137,6 +146,9 @@ section.show {
   top: 125px;
   left: 30px;
   margin: 0;
+
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 #projects {
@@ -166,6 +178,7 @@ section.show {
   overflow-x: auto;
   gap: 20px;
   padding: 20px;
+
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
@@ -175,12 +188,18 @@ section.show {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+
   flex: 0 0 300px;
+
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+
   background-color: #ffffff;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
   scroll-snap-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
