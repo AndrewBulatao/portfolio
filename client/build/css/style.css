@@ -114,6 +114,13 @@ section.show {
   margin: 0;
 }
 
+#home p{
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  margin: 0;
+}
+
 #about {
   background: #e8f5e9;
 }
@@ -125,6 +132,13 @@ section.show {
   margin: 0;
 }
 
+#about p{
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  margin: 0;
+}
+
 #projects {
   background: #fdf1d6;
 }
@@ -132,6 +146,13 @@ section.show {
 #projects h1 {
   position: absolute;
   top: 30px;
+  left: 30px;
+  margin: 0;
+}
+
+#projects p{
+  position: absolute;
+  top: 300px;
   left: 30px;
   margin: 0;
 }
