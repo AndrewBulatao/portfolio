@@ -49,14 +49,6 @@ button:hover,
 
 }
 
-section h1 {
-  position: absolute;
-  top: 30px;   
-  left: 30px;
-  margin: 0;
-  font-size: 30px;
-}
-
 /* Nav list */
 .nav {
   display: flex;
@@ -111,15 +103,37 @@ section.show {
 
 /* Ghibli-style backgrounds */
 #home {
+  padding-top: 100px;
   background: linear-gradient(to bottom, #cfe9ff, #fef6e4);
+}
+
+#home h1 {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  margin: 0;
 }
 
 #about {
   background: #e8f5e9;
 }
 
+#about h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin: 0;
+}
+
 #projects {
   background: #fdf1d6;
+}
+
+#projects h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin: 0;
 }
 
 /* Typography */
