@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   font-family: 'Ghibli', 'Times New Roman', Times, serif;
-  cursor: url('/client/build/images/bird_resized_spirit.png') 16 16, auto;
+  cursor: url('/client/build/images/ghibli_photos/bird_resized_spirit.png') 16 16, auto;
   background-color: #fef6e4;
 }
 
@@ -35,7 +35,7 @@ p {
 a:hover,
 button:hover,
 .project-card:hover {
-  cursor: url('/client/build/images/mouse_resized_spirit.png') 16 16, pointer;
+  cursor: url('/client/build/images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
 }
 
 /* NAVBAR */
@@ -173,7 +173,7 @@ section.show {
 .project-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  cursor: url('../images/mouse_resized_spirit.png') 16 16, pointer;
+  cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
 }
 
 .project-card img {
