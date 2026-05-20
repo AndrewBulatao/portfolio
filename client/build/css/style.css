@@ -88,8 +88,8 @@ button:hover,
 
 /* SECTIONS */
 section {
-  min-height: 100vh;
-  padding: 120px 20px;
+  min-height: 80vh;        /* was 100vh */
+  padding: 80px 20px;      /* was 120px */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +133,12 @@ section.show {
   max-width: 600px;
   line-height: 1.6;
   margin: 0 0 20px 0;
+}
+
+#contact {
+  min-height: auto;     
+  padding: 60px 20px;   
+  justify-content: flex-start;
 }
 
 /* PROJECT SCROLL */
