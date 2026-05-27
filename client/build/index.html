@@ -13,6 +13,7 @@
   <!-- External CSS/Logos -->
   <link rel="stylesheet" href="/client/build/css/style.css">
   <link rel="stylesheet" href="/client/build/css/components.css">
+  <link rel="stylesheet" href="/client/build/css/chatbot.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link
     rel="stylesheet"
@@ -22,6 +23,26 @@
 </head>
 
 <body>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-container">
+
+    <div class="chatbot-header">
+      Ask Calcifer
+    </div>
+
+    <div class="chatbot-messages">
+      <div class="ai-message">
+        Hello! Ask me anything about Andrew.
+      </div>
+    </div>
+
+    <div class="chatbot-input-area">
+      <input id="chat-input" type="text" placeholder="Type a message...">
+      <button id="send-btn">Send</button>
+    </div>
+
+  </div>
 
   <!-- NAVBAR -->
   <div class="header">
@@ -97,6 +118,8 @@
   </div>
 </section>
 
+  <!-- Chatbot script -->
+  <script src="/client/build/js/chatbot.js"></script>
   <!-- SCROLL-TRIGGER SCRIPT -->
   <script>
     const sections = document.querySelectorAll("section");
