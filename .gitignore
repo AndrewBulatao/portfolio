@@ -5,5 +5,4 @@
 node_modules/
 
 # Build files (optional)
-build/
 dist/

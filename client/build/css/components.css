@@ -1,0 +1,113 @@
+/* Horizontal scroll container */
+.projects-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar */
+.projects-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Project cards */
+.project-card {
+  flex: 0 0 300px;
+
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  scroll-snap-align: start;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+
+  cursor: url('../images/ghibli_photos/bird_resized_spirit.png') 16 16, pointer;
+}
+
+/* Project images */
+.project-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* Links inside cards */
+.project-card a {
+  text-decoration: none;
+  color: #4a7c59;
+  font-weight: bold;
+}
+
+/* Social buttons*/
+.socials {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Colors per platform */
+.fa-facebook { background: #3b5998; color: white; }
+.fa-twitter { background: #55acee; color: white; }
+.fa-github { background: #333; color: white; }
+.fa-linkedin { background: #0077b5; color: white; }
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* Icon links for socials */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.socials a {
+  font-size: 50px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* GitHub hover */
+.socials a:hover .fa-github {
+  color: #6e5494;
+}
+
+/* LinkedIn hover */
+.socials a:hover .fa-linkedin {
+  color: #0077b5;
+}
+
+.socials a:hover {
+  transform: scale(1.15);
+}
+
+/* chatbot */
