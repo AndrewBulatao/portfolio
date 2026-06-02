@@ -80,6 +80,16 @@ async function askAI() {
 
   const data = await response.json();
 
+  // SAFETY CHECK 
+  if (!response.ok || !data.candidates) {
+    const aiMessage = document.createElement("div");
+    aiMessage.classList.add("ai-message");
+    aiMessage.innerText =
+      "Calcifers light is dim... try again in a bit after Andrew feeds him coal!";
+
+    messages.appendChild(aiMessage);
+    return;
+  }
   // AI response
   const aiMessage = document.createElement("div");
   aiMessage.classList.add("ai-message");
