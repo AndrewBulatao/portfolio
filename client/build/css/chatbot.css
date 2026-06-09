@@ -23,6 +23,9 @@
 
 /* HEADER */
 .chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px;
 
   font-size: 1.2rem;
@@ -30,6 +33,14 @@
 
   background: #d96b3b;
   color: white;
+}
+
+#minimize-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 /* MESSAGE AREA */
@@ -106,4 +117,14 @@
   max-width: 80%;
 
   margin-left: auto;
+}
+
+/*minimized*/
+.chatbot-container.minimized {
+  height: 60px;
+}
+
+.chatbot-container.minimized .chatbot-messages,
+.chatbot-container.minimized .chatbot-input-area {
+  display: none;
 }
