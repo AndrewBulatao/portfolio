@@ -1,8 +1,8 @@
-const API_URL = "YOUR_API_URL_HERE";
+const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDoYhM3ZOy7ubAU6iBQa_iz6axhAqFw33c";
 
 async function askAI() {
   const prompt = document.getElementById("chat-input").value;
-
+  console.log("This is prompt: " + prompt);
   if (!prompt.trim()) return;
 
   const messages = document.querySelector(".chatbot-messages");
