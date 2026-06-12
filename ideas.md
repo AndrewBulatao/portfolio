@@ -1,7 +1,7 @@
 # Add on Ideas
 A place where I can keep track of what I want to work on in the future and what I need to work on now.
 
-##**TO DO**
+**##TO DO**
 - Add pictures of myself
 - Add pictures of worked on projects 
 - Find domain name to host website (Do once website is done)
