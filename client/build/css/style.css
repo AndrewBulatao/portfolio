@@ -110,6 +110,32 @@ section.show {
   background: linear-gradient(to bottom, #cfe9ff, #fef6e4);
 }
 
+#home .home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 400px;
+
+  border: 2px dashed #999;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f5f5f5;
+  color: #666;
+}
+
 #about {
   background: #e8f5e9;
 }
@@ -118,7 +144,7 @@ section.show {
   background: #fdf1d6;
 }
 
-/* FIXED: remove absolute positioning */
+
 #home h1,
 #about h1,
 #projects h1 {
