@@ -7,12 +7,29 @@ A place where I can keep track of what I want to work on in the future and what 
 - Add scrolling languages known under 'home' section
 - Find domain name to host website (Do once website is done)
 
+#### Helpful websites
+- Background animations:
+    - `https://prismic.io/blog/css-background-effects`
+        - #2 Shooting stars (*For sure put*)
+        - #13 Scroll-driven scroll-snapping animations (*For sure put*)
+        - #23 SVG Gradien wave generator (*Bottom of page design?*)
+- Hover Animations:
+    - `https://prismic.io/blog/css-hover-effects`
+- Text Animations:
+    - `https://prismic.io/blog/css-text-animations`
+        - #24 Editor Illustration
+        - #18 Ghost Ghouls
+        - #16 Text animation w background
+        - #13 Text marquee effect
+        - #12 HEY 3D animation
+        - #38 Curved Dusseldot
+            - Can put this around social media and has name around icon
 ## Main features
 - Mobile app version
 
 ## Mini Features
 -  Day and Night button
--  
+
 
 ## Chatbot 
 ~~-  Make chatbot minimize option~~
