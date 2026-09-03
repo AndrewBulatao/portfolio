@@ -15,6 +15,9 @@ A place where I can keep track of what I want to work on in the future and what 
         - #23 SVG Gradien wave generator (*Bottom of page design?*)
 - Hover Animations:
     - `https://prismic.io/blog/css-hover-effects`
+        - #2 Liquid morph
+        - #4 Text underline
+        - #16 Social media hover
 - Text Animations:
     - `https://prismic.io/blog/css-text-animations`
         - #24 Editor Illustration
