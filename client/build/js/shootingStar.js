@@ -1,11 +1,11 @@
 const shootingStars = document.querySelectorAll(".shooting-star");
 
 const starColors = [
-  "#fff1a8",
-  "#bde7ff",
-  "#e7c6ff",
-  "#ffd6a5",
-  "#c8f7ff"
+  "#fff200",
+  "#00d9ff",
+  "#d65cff",
+  "#ff8c00",
+  "#00f5d4"
 ];
 
 function randomizeStar(star) {

@@ -110,7 +110,6 @@
 }
 
 /* STARS */
-/* STARS */
 .stars {
   position: absolute;
   inset: 0;
@@ -134,7 +133,7 @@
   height: 3px;
   background: linear-gradient(90deg, #fff1a8, #bde7ff, #e7c6ff, #fff1a8);
   background-size: 200% 100%;
-  animation: shoot 5s infinite ease-in;
+  animation: shoot 3s infinite ease-in;
   z-index: 1;
   pointer-events: none;
 }
