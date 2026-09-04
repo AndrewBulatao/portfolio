@@ -169,29 +169,9 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <!-- Chatbot script -->
   <script src="/client/build/js/chatbot.js"></script>
-  <!-- SCROLL-TRIGGER SCRIPT -->
-  <script>
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    }, { threshold: 0.2 });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });    
-    // Scroll to top on page load
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-    window.onload = function() {
-      window.scrollTo(0, 0);
-    };
-  </script>
+  <script src="/client/build/js/scrollController.js"></script>"
+  <script src="/client/build/js/stars.js"></script>
+  <script src="/client/build/js/shootingStar.js"></script>
 
   <script>
   const header = document.querySelector(".header");

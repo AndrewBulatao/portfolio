@@ -110,53 +110,35 @@
 }
 
 /* STARS */
+/* STARS */
 .stars {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-image:
-    radial-gradient(1px 1px at 5% 30%, white, transparent),
-    radial-gradient(1px 1px at 15% 70%, white, transparent),
-    radial-gradient(2px 2px at 25% 20%, white, transparent),
-    radial-gradient(1px 1px at 35% 80%, white, transparent),
-    radial-gradient(2px 2px at 45% 40%, white, transparent),
-    radial-gradient(1px 1px at 55% 65%, white, transparent),
-    radial-gradient(2px 2px at 65% 25%, white, transparent),
-    radial-gradient(1px 1px at 75% 75%, white, transparent),
-    radial-gradient(2px 2px at 85% 35%, white, transparent),
-    radial-gradient(1px 1px at 95% 60%, white, transparent);
-  animation: twinkle 8s infinite linear;
   z-index: 0;
   pointer-events: none;
 }
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 3s infinite ease-in-out;
+}
 
+/* SHOOTING STARS */
 /* SHOOTING STARS */
 .shooting-star {
   position: absolute;
   width: 100px;
-  height: 2px;
-  background: linear-gradient(90deg, white, transparent);
+  height: 3px;
+  background: linear-gradient(90deg, #fff1a8, #bde7ff, #e7c6ff, #fff1a8);
+  background-size: 200% 100%;
   animation: shoot 5s infinite ease-in;
   z-index: 1;
   pointer-events: none;
 }
-/* TODO: Make stars different colors like in howls moving castle */
-.star-one {
-  top: 15%;
-  left: -100px;
-  animation-delay: 1s;
-}
-.star-two {
-  top: 45%;
-  left: -100px;
-  animation-delay: 1.5s;
-}
-.star-three {
-  top: 70%;
-  left: -100px;
-  animation-delay: 3s;
-}
+
 
 /* STAR ANIMATIONS */
 @keyframes twinkle {
@@ -167,6 +149,18 @@
     opacity: 0.4;
   }
 }
+@keyframes starColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @keyframes shoot {
   0% {
     transform: translateX(0) translateY(0) rotate(15deg);
