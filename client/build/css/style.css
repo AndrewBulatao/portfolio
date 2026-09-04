@@ -169,8 +169,16 @@ section.show {
 
 /* BACKGROUNDS */
 #home {
+  position: relative;
   padding-top: 100px;
-  background: linear-gradient(to bottom, #f4c46b, #8b6b55, #263b4a, #0b1628);
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    #e8757d 0%,
+    #ed8a72 30%,
+    #f2a06b 60%,
+    #f5bd72 100%
+  );
 }
 
 #home .home-content {
@@ -208,8 +216,7 @@ section.show {
 #about {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, #0b1628, #18323a);
-}
+  background: linear-gradient( to bottom,#0b1628,#18323a);}
 
 #projects {
   background: #3b3540;
