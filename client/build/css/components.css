@@ -177,3 +177,34 @@
     opacity: 0;
   }
 }
+
+/* MOUNTAINS*/
+.mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 0;
+  pointer-events: none;
+}
+.mountains::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 65%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0a2032, #030a12);
+  border-radius: 100% 300% 0 0;
+}
+.mountains::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  width: 75%;
+  height: 80%;
+  background: linear-gradient(to bottom, #0a2032, #030a12);
+  border-radius: 300% 100% 0 0;
+}
