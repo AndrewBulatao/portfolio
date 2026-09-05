@@ -373,23 +373,23 @@ section.show {
   box-sizing: border-box;
 }
 .about-gallery img:nth-child(1) {
-  width: 160px;
-  height: 240px;
+  width: 290px;
+  height: 370px;
   left: 0;
   top: 0;
   z-index: 1;
 }
 .about-gallery img:nth-child(2) {
-  width: 320px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   left: 300px;
   top: 0px;
   z-index: 2;
 }
 .about-gallery img:nth-child(3) {
-  width: 160px;
-  height: 240px;
-  left: 540px;
+  width: 200px;
+  height: 280px;
+  left: 500px;
   top: 260px;
   z-index: 3;
 }
