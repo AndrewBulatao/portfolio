@@ -67,6 +67,10 @@ async function askAI() {
 const minimizeBtn = document.getElementById("minimize-btn");
 const chatbot = document.querySelector(".chatbot-container");
 
+
+chatbot.classList.add("minimized");
+minimizeBtn.textContent = "+";
+
 minimizeBtn.addEventListener("click", () => {
   chatbot.classList.toggle("minimized");
 
