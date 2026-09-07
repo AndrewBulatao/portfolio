@@ -1,5 +1,5 @@
-const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDoYhM3ZOy7ubAU6iBQa_iz6axhAqFw33c";
-
+const API_URL = "/api/chat";
+// TODO hide this file
 async function askAI() {
   const prompt = document.getElementById("chat-input").value;
   console.log("This is prompt: " + prompt);

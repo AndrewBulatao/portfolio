@@ -1,8 +1,12 @@
 # macOS
 .DS_Store
 
-# Node (if you ever use it)
+# Node
 node_modules/
 
-# Build files (optional)
+# Environment variables
+.env
+.env.*
+
+# Build files
 dist/
