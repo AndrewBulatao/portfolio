@@ -1,0 +1,129 @@
+/* Pictures */
+.about-gallery {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-gallery img {
+  position: absolute;
+  border: 1px solid rgba(255,255,255,0.8);
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.about-gallery img:nth-child(1) {
+  width: 290px;
+  height: 370px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.about-gallery img:nth-child(2) {
+  width: 400px;
+  height: 250px;
+  left: 300px;
+  top: 0px;
+  z-index: 2;
+}
+.about-gallery img:nth-child(3) {
+  width: 200px;
+  height: 280px;
+  left: 500px;
+  top: 260px;
+  z-index: 3;
+}
+
+/* STARS */
+.stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+/* Shooting Stars */
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #fff1a8, #bde7ff, #e7c6ff, #fff1a8);
+  background-size: 200% 100%;
+  animation: shoot 3s infinite ease-in;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* Star animation */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@keyframes starColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0) rotate(15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) translateY(0) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+/* Mountains */
+.mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 0;
+  pointer-events: none;
+}
+.mountains::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 65%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0a2032, #030a12);
+  border-radius: 100% 300% 0 0;
+}
+.mountains::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  width: 75%;
+  height: 80%;
+  background: linear-gradient(to bottom, #0a2032, #030a12);
+  border-radius: 300% 100% 0 0;
+}
+
