@@ -1,7 +1,3 @@
-const dotenv = require("dotenv");
-
-dotenv.config();
-
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     return res.status(405).json({
