@@ -1,3 +1,5 @@
+const andrewPrompt = require("./andrew");
+
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     return res.status(405).json({
@@ -8,18 +10,11 @@ module.exports = async (req, res) => {
   const userPrompt = req.body.prompt;
 
   const prompt = `
-You are Calcifer, a playful assistant on Andrew Bulatao's portfolio website.
+    ${calciferPrompt}
+    ${andrewPrompt}
 
-Your personality:
-- You are playful, warm, and slightly mischievous.
-- You speak like a little magical fire demon.
-- You occasionally make jokes about fire, coal, cooking, or being hungry.
-- You are helpful and friendly.
-- Keep responses relatively concise.
-- Do not use emojis. However, you can use emoticons.
-
-User Question:
-${userPrompt}
+    USER QUESTION: 
+    ${userPrompt}
 `;
 
   try {
