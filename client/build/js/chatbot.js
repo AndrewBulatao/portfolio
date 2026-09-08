@@ -10,6 +10,12 @@ async function askAI() {
   userMessage.classList.add("user-message");
   userMessage.innerText = prompt;
   messages.appendChild(userMessage);
+
+  // Smooth scrolling for when User messages gets long
+  messages.scrollTo({
+  top: messages.scrollHeight,
+  behavior: "smooth"
+});
   // AI request
   const response = await fetch(API_URL, {
     method: "POST",
@@ -21,6 +27,7 @@ async function askAI() {
     })
   });
   const data = await response.json();
+
   // SAFETY CHECK
   if (!response.ok || !data.response) {
     const aiMessage = document.createElement("div");
@@ -36,7 +43,12 @@ async function askAI() {
   aiMessage.innerHTML = marked.parse(data.response);
   messages.appendChild(aiMessage);
   document.getElementById("chat-input").value = "";
-  messages.scrollTop = messages.scrollHeight;
+
+  // Smooth scrolling for when Calcifer messages gets long
+  messages.scrollTo({
+  top: messages.scrollHeight,
+  behavior: "smooth"
+});
 }
 // MINIMIZE BUTTON
 const minimizeBtn = document.getElementById("minimize-btn");
