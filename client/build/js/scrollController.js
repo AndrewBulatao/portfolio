@@ -41,6 +41,13 @@ function scrollToSection(index) {
 }
 
 window.addEventListener("wheel", (event) => {
+
+  // If scrolling inside the chatbot, let the browser handle it normally
+  if (event.target.closest(".chatbot-container")) {
+    return;
+  }
+
+  // Prevent normal page scrolling everywhere else
   event.preventDefault();
 
   if (isScrolling) {
@@ -52,4 +59,5 @@ window.addEventListener("wheel", (event) => {
   } else {
     scrollToSection(currentSection - 1);
   }
+
 }, { passive: false });
