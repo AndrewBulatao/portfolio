@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   font-family: 'Ghibli', 'Times New Roman', Times, serif;
-  cursor: url('build/images/ghibli_photos/bird_resized_spirit.png') 16 16, auto;
+  cursor: url('../images/ghibli_photos/bird_resized_spirit.png') 16 16, auto;
   background-color: #fef6e4;
   color: white;
   overflow-x: hidden;
@@ -39,7 +39,7 @@ p {
 a:hover,
 button:hover,
 .project-card:hover {
-  cursor: url('build/images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
+  cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
 }
 
 /* NAVBAR */
