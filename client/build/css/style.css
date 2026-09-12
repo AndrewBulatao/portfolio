@@ -38,7 +38,8 @@ p {
 /* HOVER CURSORS */
 a:hover,
 button:hover,
-.project-card:hover {
+.project-card:hover,
+.sun:hover {
   cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
 }
 

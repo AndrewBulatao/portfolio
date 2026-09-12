@@ -115,7 +115,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .sun {
@@ -130,7 +130,10 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  z-index: 0;
+  user-select: none;
+/* ADD CURSOR: GRAB WHEN DRAGGING SUN*/
+  
+  z-index: 100;
 }
 @keyframes sunArc {
   0% {
