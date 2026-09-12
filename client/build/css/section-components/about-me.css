@@ -127,3 +127,16 @@
   border-radius: 300% 100% 0 0;
 }
 
+.github-graph {
+  position: absolute;
+  width: min(900px, 90%);
+  left: 40%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0.9;
+  z-index: 3;
+  font-family: "Ghibli", sans-serif;
+
+}
