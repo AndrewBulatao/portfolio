@@ -40,7 +40,6 @@
   border: none;
   color: white;
   font-size: 1.4rem;
-  cursor: pointer;
 }
 
 /* Messages */
@@ -68,22 +67,20 @@
 /* INPUT AREA */
 .chatbot-input-area {
   display: flex;
-
   padding: 10px;
-
   gap: 10px;
-
   border-top: 1px solid #ddd;
+}
+
+.chatbot-input-area button:hover {
+  cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
 }
 
 /* INPUT */
 .chatbot-input-area input {
   flex: 1;
-
   padding: 10px;
-
   border-radius: 10px;
-
   border: 1px solid #bab2b2;
 }
 

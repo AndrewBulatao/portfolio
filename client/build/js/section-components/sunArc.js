@@ -18,6 +18,8 @@ function updateSunPosition() {
     const y = startY + (peakY - startY) * (4 * progress * (1 - progress));
     sun.style.left = `${x}px`;
     sun.style.top = `${y}px`;
+    sunReflection.style.left = `${x}px`;
+
 }
 function animateSun(currentTime) {
     // Dragging
