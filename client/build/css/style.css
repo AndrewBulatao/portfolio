@@ -172,6 +172,8 @@ section.show {
 #home {
   flex-direction: column;
   position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
   padding-top: 100px;
   overflow: hidden;
   background: linear-gradient(

@@ -93,6 +93,13 @@
   z-index: 0;
 }
 
+.sun-orbit {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .sun {
   position: absolute;
   width: 120px;
@@ -100,22 +107,16 @@
   border-radius: 50%;
   background: #ffd85a;
   box-shadow: 0 0 40px 15px rgba(255,216,90,0.5);
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
   z-index: 1;
-  pointer-events: none;
-  animation: sunArc 15s infinite linear;
 }
-/* Sun animation */
 @keyframes sunArc {
   0% {
-    left: -120px;
-    top: 60%;
-  }
-  50% {
-    left: 50%;
-    top: 5%;
+    transform: rotate(-90deg);
   }
   100% {
-    left: 100%;
-    top: 60%;
+    transform: rotate(90deg);
   }
 }
