@@ -44,7 +44,6 @@ function animateSun(currentTime) {
     sun.style.top = `${y}px`;
     // Move the reflection underneath the sun
     sunReflection.style.left = `${x}px`;
-    sunRipples.style.left = `${x}px`;
     // Restart the animation when the sun reaches the end
     if (progress >= 1) {
         startTime = currentTime;
@@ -52,7 +51,6 @@ function animateSun(currentTime) {
     // Continue the animation
     requestAnimationFrame(animateSun);
 }
-
 // Sun Dragging animation
 sun.addEventListener("mousedown", () => {
     isDragging = true;

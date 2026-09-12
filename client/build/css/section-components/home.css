@@ -90,7 +90,7 @@
     #263b4a 45%,
     #0b1628 100%
   );
-  z-index: 0;
+  z-index: 2;
 }
 
 .water-shimmer {
@@ -176,7 +176,6 @@
   width: 120px;
   height: 120px;
   filter: blur(1.3px);
-
   border-radius: 50%;
   background: #ffd85a;
   box-shadow: 0 0 40px 15px rgba(255,216,90,0.5);
@@ -185,7 +184,6 @@
   transform: translateX(-50%);
   user-select: none;
 /* ADD CURSOR: GRAB WHEN DRAGGING SUN*/
-  
   z-index: 100;
 }
 @keyframes sunArc {
