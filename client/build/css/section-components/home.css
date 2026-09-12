@@ -93,6 +93,24 @@
   z-index: 0;
 }
 
+.sun-reflection {
+  position: absolute;
+  width: 180px;
+  height: 80%;
+  left: 0;
+  top: -10%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 216, 90, 0.45) 0%,
+    rgba(255, 216, 90, 0.2) 35%,
+    transparent 75%
+  );
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
 .sun-orbit {
   position: absolute;
   inset: 0;
