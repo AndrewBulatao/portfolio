@@ -7,7 +7,7 @@ const peakX = screenWidth / 2;
 const peakY = screenHeight * 0.05;
 const endX = screenWidth + 60;
 const endY = screenHeight * 0.6;
-const animationDuration = 15000;
+const animationDuration = 75000;
 let startTime = null;
 
 
