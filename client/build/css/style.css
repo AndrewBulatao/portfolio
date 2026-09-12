@@ -36,7 +36,6 @@ p {
 }
 
 /* HOVER CURSORS */
-/* HOVER CURSORS */
 a:hover,
 button:hover,
 .project-card:hover,
@@ -254,11 +253,12 @@ section.show {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  background: linear-gradient( to bottom,#0b1628,#18323a);}
-
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom,#0b1628,#18323a);
+}
 #projects {
   flex-direction: column;
-
   background: #3b3540;
 }
 
