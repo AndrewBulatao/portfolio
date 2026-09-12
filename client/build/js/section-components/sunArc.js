@@ -10,7 +10,6 @@ const endX = screenWidth + 60;
 const endY = screenHeight * 0.6;
 const animationDuration = 75000;
 let startTime = null;
-
 // Dragging code
 let isDragging = false;
 let progress = 0;
@@ -19,7 +18,6 @@ function updateSunPosition() {
     const y = startY + (peakY - startY) * (4 * progress * (1 - progress));
     sun.style.left = `${x}px`;
     sun.style.top = `${y}px`;
-    sunReflection.style.left = `${x}px`;
 }
 function animateSun(currentTime) {
     // Dragging
@@ -36,7 +34,6 @@ function animateSun(currentTime) {
     if (progress > 1) {
         progress = 1;
     }
-
     // Calculate
     // horizontal position
     const x = startX + (endX - startX) * progress;
@@ -47,6 +44,7 @@ function animateSun(currentTime) {
     sun.style.top = `${y}px`;
     // Move the reflection underneath the sun
     sunReflection.style.left = `${x}px`;
+    sunRipples.style.left = `${x}px`;
     // Restart the animation when the sun reaches the end
     if (progress >= 1) {
         startTime = currentTime;
