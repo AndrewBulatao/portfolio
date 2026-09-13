@@ -7,7 +7,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background: rgba(255, 255, 255, 0.15);
 }
 
 .about-gallery img {
@@ -35,7 +34,7 @@
 /* Me guitar*/
 .about-gallery img:nth-child(3) {
   width: 11vw;
-  height: 28vh;
+  height: 12.5vh;
   left: 37.5vw;
   top: 26.5vh;
   z-index: 3;
@@ -48,11 +47,39 @@
   z-index: 4;
 }
 /* github graph */
+
+/* GitHub Graph */
+.github-graph {
+  --gh-bg-color: rgba(11, 22, 40, 0.85);
+  --gh-text-default-color: #f5bd72;
+  --gh-text-inactive-color: rgba(255, 255, 255, 0.5);
+  --gh-link-hover-color: #f5bd72;
+  --gh-cell-level0-color: #0b1628;
+  --gh-cell-level1-color: #18323a;
+  --gh-cell-level2-color: #31515a;
+  --gh-cell-level3-color: #5f7475;
+  --gh-cell-level4-color: #f5bd72;
+  --gh-cell-size: 8px;
+  --gh-cell-gap: 3px;
+  --gh-cell-radius: 3px;
+  --gh-cell-border-color: rgba(255,255,255,0.08);
+  --gh-cell-outline-color: rgba(255,255,255,0.15);
+  --gh-border-card-color: rgba(255,255,255,0.15);
+  --gh-border-card-width: 1px;
+  --gh-card-padding: 10px;
+  --gh-card-padding-block: 10px;
+  --gh-card-radius: 0px;
+  --gh-tooltip-text-color: #f5bd72;
+  --gh-tooltip-padding: 8px;
+  --gh-tooltip-radius: 6px;
+  --gh-tooltip-font-size: 12px;
+}
+
 .about-gallery .github-graph {
   position: absolute;
-  width: 490px;
-  left: 0;
-  top: 380px;
+  width: 46.2vw;
+  left: 2.3vw;
+  top: 39.5vh;
   z-index: 5;
   border-radius: 15px;
   opacity: 0.9;
