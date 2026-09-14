@@ -258,11 +258,13 @@ section.show {
   box-sizing: border-box;
   background: linear-gradient(to bottom,#0b1628,#18323a);
 }
-#projects {
-  flex-direction: column;
-  background: #3b3540;
-}
 
+#tft-analyzer {
+  min-height: 100vh;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
 
 #home h1,
 #about h1,
