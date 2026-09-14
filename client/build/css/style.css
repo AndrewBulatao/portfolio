@@ -43,19 +43,24 @@ button:hover,
   cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
 }
 
+.main-content {
+  margin: 0;
+  padding: 0;
+}
+
 /* NAVBAR */
 .header {
   position: sticky;
   top: 0;
   width: 100%;
+  box-sizing: border-box;
   background: rgba(10, 20, 35, 0.85);
   backdrop-filter: blur(10px);
   padding: 15px 20px;
+  margin-bottom: -50px;
   z-index: 1000;
   overflow: hidden;
 }
-
-
 
 .nav {
   display: flex;
