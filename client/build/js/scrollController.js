@@ -1,11 +1,12 @@
 const sections = document.querySelectorAll("section");
+const header = document.querySelector(".header");
 
 let currentSection = 0;
 let isScrolling = false;
-
 const scrollDuration = 1000;
 
 function scrollToSection(index) {
+
   if (index < 0 || index >= sections.length || isScrolling) {
     return;
   }
@@ -13,12 +14,16 @@ function scrollToSection(index) {
   isScrolling = true;
   currentSection = index;
 
+  // Hide on Home, show once we reach About
+  //index === 0 ? header.classList.add("hide") : header.classList.remove("hide");
+
   const startPosition = window.scrollY;
   const targetPosition = sections[index].offsetTop;
   const distance = targetPosition - startPosition;
   const startTime = performance.now();
 
   function animateScroll(currentTime) {
+
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / scrollDuration, 1);
 
@@ -36,12 +41,10 @@ function scrollToSection(index) {
       isScrolling = false;
     }
   }
-
   requestAnimationFrame(animateScroll);
 }
 
 window.addEventListener("wheel", (event) => {
-
   // If scrolling inside the chatbot, let the browser handle it normally
   if (event.target.closest(".chatbot-container")) {
     return;
@@ -59,5 +62,5 @@ window.addEventListener("wheel", (event) => {
   } else {
     scrollToSection(currentSection - 1);
   }
-
+  
 }, { passive: false });

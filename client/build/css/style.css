@@ -45,21 +45,17 @@ button:hover,
 
 /* NAVBAR */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background: rgba(10, 20, 35, 0.85);
   backdrop-filter: blur(10px);
   padding: 15px 20px;
   z-index: 1000;
-  transition: transform 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
 }
 
-.header.hide {
-  transform: translateY(-100%);
-  opacity: 0;/* NAV */
-}
+
 
 .nav {
   display: flex;

@@ -50,18 +50,6 @@
 
   </div>
 
-<!-- NAVBAR -->
-<div class="header">
-
-
-  <ul class="nav">
-    <li><a class="nav-link" href="#home">Home</a></li>
-    <li><a class="nav-link" href="#about">About Me</a></li>
-    <li><a class="nav-link" href="#projects">Projects</a></li>
-    <li><a class="nav-link" href="#contact">Contacts</a></li>
-  </ul>
-
-</div>
 
   <!-- HOME SECTION -->
 
@@ -92,8 +80,24 @@
 
   </section>
 
+  <div class="main-content">
+
+          <!-- NAVBAR -->
+<div class="header">
+
+
+  <ul class="nav">
+    <li><a class="nav-link" href="#home">Home</a></li>
+    <li><a class="nav-link" href="#about">About Me</a></li>
+    <li><a class="nav-link" href="#projects">Projects</a></li>
+    <li><a class="nav-link" href="#contact">Contacts</a></li>
+  </ul>
+
+  </div>
   <!-- ABOUT SECTION -->
   <section id="about">
+
+
     <div class="stars"></div>
     <div class="shooting-star star-one"></div>
     <div class="shooting-star star-two"></div>
@@ -193,7 +197,7 @@
     </a>
   </div>
 </section>
-
+</div> <!-- div for 'main-content' class -->
   <!-- Markdown Parser -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <!-- Scripts script -->
@@ -205,26 +209,6 @@
   <script src="js/section-components/waterShimmer.js"></script>
   <script src="js/section-components/clouds.js"></script>
   <script src="https://unpkg.com/github-contrib-graph@3.1.1/dist/browser.global.js"></script>
-  
-  <script>
-  const header = document.querySelector(".header");
-
-  let lastScrollY = window.scrollY;
-
-  window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY && currentScrollY > 80) {
-      // scrolling DOWN → hide navbar
-      header.classList.add("hide");
-    } else {
-      // scrolling UP → show navbar
-      header.classList.remove("hide");
-    }
-
-    lastScrollY = currentScrollY;
-  });
-  </script>
 
 </body>
 </html>
