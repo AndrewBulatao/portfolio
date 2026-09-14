@@ -199,7 +199,7 @@ section.show {
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 100;
 }
 
 .home-text {
@@ -379,7 +379,7 @@ section.show {
 .about-content {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 55vh;
   z-index: 2;
 }
 .about-text {

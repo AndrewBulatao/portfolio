@@ -95,7 +95,6 @@
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 180, 100, 0.2);
   filter: brightness(0.9);
-
 }
 
 /* STARS */
@@ -188,4 +187,36 @@
   height: 80%;
   background: linear-gradient(to bottom, #0a2032, #030a12);
   border-radius: 300% 100% 0 0;
+}
+
+/* Smaller screen */
+@media (max-width: 1300px) {
+  #about {
+    min-height: 100vh;
+    height: auto;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .about-text {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 90%;
+    z-index: 4;
+  }
+  .about-gallery {
+    position: relative;
+    width: 90%;
+    height: 55vh;
+    left: auto;
+    top: auto;
+    transform: none;
+    z-index: 1;
+  }
 }
