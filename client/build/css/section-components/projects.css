@@ -272,3 +272,25 @@
   background: linear-gradient(to bottom,#403447 0%,#172638 35%,#0a1725 70%,#030a12 100%);
   border-radius: 300% 100% 0 0;
 }
+
+/* Shooting Stars */
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg,#fff1a8,#bde7ff,#e7c6ff,#fff1a8);
+  background-size: 200% 100%;
+  animation: shoot 3s infinite ease-in;
+  z-index: 1;
+  pointer-events: none;
+}
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0) rotate(15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) translateY(0) rotate(15deg);
+    opacity: 0;
+  }
+}

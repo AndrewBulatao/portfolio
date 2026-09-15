@@ -9,7 +9,7 @@ const starColors = [
 ];
 
 function randomizeStar(star) {
-  const randomY = Math.random() * 75 + 5;
+const randomY = Math.random() * 60 + 5;
   const randomColor = starColors[Math.floor(Math.random() * starColors.length)];
   const randomDuration = Math.random() * 2 + 4;
   const randomDelay = Math.random() * 5;
