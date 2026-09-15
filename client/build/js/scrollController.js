@@ -1,40 +1,24 @@
 const sections = document.querySelectorAll("section");
 const header = document.querySelector(".header");
-
 let currentSection = 0;
 let isScrolling = false;
 const scrollDuration = 1000;
-
+/*
 function scrollToSection(index) {
-
-  if (index < 0 || index >= sections.length || isScrolling) {
+  if (index < 0 || index > 1 || isScrolling) {
     return;
   }
-
   isScrolling = true;
   currentSection = index;
-
-  // Hide on Home, show once we reach About
-  //index === 0 ? header.classList.add("hide") : header.classList.remove("hide");
-
   const startPosition = window.scrollY;
   const targetPosition = sections[index].offsetTop;
   const distance = targetPosition - startPosition;
   const startTime = performance.now();
-
   function animateScroll(currentTime) {
-
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / scrollDuration, 1);
-
-    // Smooth easing
     const easedProgress = 1 - Math.pow(1 - progress, 3);
-
-    window.scrollTo(
-      0,
-      startPosition + distance * easedProgress
-    );
-
+    window.scrollTo(0, startPosition + distance * easedProgress);
     if (progress < 1) {
       requestAnimationFrame(animateScroll);
     } else {
@@ -42,25 +26,24 @@ function scrollToSection(index) {
     }
   }
   requestAnimationFrame(animateScroll);
-}
-
+}*/
 window.addEventListener("wheel", (event) => {
-  // If scrolling inside the chatbot, let the browser handle it normally
   if (event.target.closest(".chatbot-container")) {
     return;
   }
-
-  // Prevent normal page scrolling everywhere else
-  event.preventDefault();
-
   if (isScrolling) {
+    event.preventDefault();
     return;
   }
-
-  if (event.deltaY > 0) {
-    scrollToSection(currentSection + 1);
-  } else {
-    scrollToSection(currentSection - 1);
+  const homeTop = sections[0].offsetTop;
+  const aboutTop = sections[1].offsetTop;
+  const currentScroll = window.scrollY;
+  const tolerance = 10;
+  if (Math.abs(currentScroll - homeTop) <= tolerance && event.deltaY > 0) {
+    event.preventDefault();
+    scrollToSection(1);
+  } else if (Math.abs(currentScroll - aboutTop) <= tolerance && event.deltaY < 0) {
+    event.preventDefault();
+    scrollToSection(0);
   }
-  
 }, { passive: false });

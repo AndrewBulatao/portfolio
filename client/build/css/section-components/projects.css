@@ -18,9 +18,10 @@
 .project-container:last-child {
   margin-bottom: 0;
 }
+
 .project-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 60px;
 }
@@ -44,6 +45,7 @@
   height: 40vh;
   background: rgba(96, 148, 230, 0.45);
   border: 2px solid white;
+  overflow: hidden;
 }
 .project-image img {
   width: 100%;

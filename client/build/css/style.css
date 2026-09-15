@@ -14,8 +14,6 @@
 /* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-
 }
 
 /* BODY */
@@ -154,8 +152,6 @@ section {
   padding: 80px 20px;      
   display: flex;
   justify-content: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   
   /* For section fade in
     opacity: 0;
@@ -192,25 +188,15 @@ section.show {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;#home .home-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   width: 50%;
   margin: 0 auto;
   z-index: 100;
 }
-
 .home-text {
   max-width: 800px;
   background: rgba(252, 252, 252, 0.1);
   padding: 25px 35px;
   border-radius: 15px;
-}
-
-  margin: 0 auto;
-  z-index: 2;
 }
 
 .home-text {
@@ -276,6 +262,7 @@ section.show {
 
 #projects {
   flex-direction: column;
+  align-items: center;
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
