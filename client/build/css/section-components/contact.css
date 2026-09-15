@@ -195,3 +195,32 @@
   position: relative;
   z-index: 2;
 }
+
+/* Grass */
+#contact .grass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#contact .grass-blade {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  background: #18351d;
+  border-radius: 100% 0 0 0;
+  transform-origin: bottom center;
+  animation: grassSway 3s ease-in-out infinite alternate;
+}
+@keyframes grassSway {
+  0% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
