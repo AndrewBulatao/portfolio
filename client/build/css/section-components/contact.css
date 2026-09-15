@@ -224,3 +224,154 @@
     transform: rotate(6deg);
   }
 }
+
+/* Red Spider Lilies */
+#contact .spider-lilies {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  pointer-events: none;
+}
+#contact .spider-lily {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  height: 260px;
+  transform: scale(var(--flower-scale)) rotate(var(--flower-rotation));
+  transform-origin: bottom center;
+  animation: spiderLilySway 3s ease-in-out infinite alternate;
+}
+#contact .spider-lily__stem {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  height: 170px;
+  transform: translateX(-50%);
+  background: linear-gradient(to top,#102a16,#263f23);
+  border-radius: 100%;
+}
+#contact .spider-lily__petals {
+  position: absolute;
+  left: 50%;
+  bottom: 145px;
+  width: 180px;
+  height: 100px;
+  transform: translateX(-50%);
+}
+#contact .spider-lily__petals span {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 13px;
+  height: 90px;
+  transform-origin: 50% 100%;
+  border-radius: 100% 100% 30% 30%;
+  background: linear-gradient(to top,#3d1118,#641725 70%,#852536);
+  box-shadow: 0 0 5px rgba(120,25,45,0.2);
+}
+#contact .spider-lily__petals span:nth-child(1) {
+  transform: translateX(-50%) rotate(-75deg);
+}
+#contact .spider-lily__petals span:nth-child(2) {
+  transform: translateX(-50%) rotate(-48deg);
+}
+#contact .spider-lily__petals span:nth-child(3) {
+  transform: translateX(-50%) rotate(-20deg);
+}
+#contact .spider-lily__petals span:nth-child(4) {
+  transform: translateX(-50%) rotate(20deg);
+}
+#contact .spider-lily__petals span:nth-child(5) {
+  transform: translateX(-50%) rotate(48deg);
+}
+#contact .spider-lily__petals span:nth-child(6) {
+  transform: translateX(-50%) rotate(75deg);
+}
+#contact .spider-lily__stamens {
+  position: absolute;
+  left: 50%;
+  bottom: 170px;
+  width: 180px;
+  height: 100px;
+  transform: translateX(-50%);
+}
+#contact .spider-lily__stamens span {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  height: 105px;
+  transform-origin: 50% 100%;
+  border-radius: 100%;
+  background: linear-gradient(to top,#70202b,#9a4938);
+}
+#contact .spider-lily__stamens span::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  width: 5px;
+  height: 8px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #b87945;
+  box-shadow: 0 0 4px rgba(184,121,69,0.25);
+}
+#contact .spider-lily__stamens span:nth-child(1) {
+  transform: translateX(-50%) rotate(-80deg);
+}
+#contact .spider-lily__stamens span:nth-child(2) {
+  transform: translateX(-50%) rotate(-65deg);
+}
+#contact .spider-lily__stamens span:nth-child(3) {
+  transform: translateX(-50%) rotate(-50deg);
+}
+#contact .spider-lily__stamens span:nth-child(4) {
+  transform: translateX(-50%) rotate(-35deg);
+}
+#contact .spider-lily__stamens span:nth-child(5) {
+  transform: translateX(-50%) rotate(-18deg);
+}
+#contact .spider-lily__stamens span:nth-child(6) {
+  transform: translateX(-50%) rotate(0deg);
+}
+#contact .spider-lily__stamens span:nth-child(7) {
+  transform: translateX(-50%) rotate(18deg);
+}
+#contact .spider-lily__stamens span:nth-child(8) {
+  transform: translateX(-50%) rotate(35deg);
+}
+#contact .spider-lily__stamens span:nth-child(9) {
+  transform: translateX(-50%) rotate(50deg);
+}
+#contact .spider-lily__stamens span:nth-child(10) {
+  transform: translateX(-50%) rotate(65deg);
+}
+#contact .lily-one {
+  left: 7%;
+  --flower-scale: 0.75;
+  --flower-rotation: -5deg;
+}
+#contact .lily-two {
+  left: 45%;
+  bottom: 20px;
+  --flower-scale: 1;
+  --flower-rotation: 2deg;
+}
+#contact .lily-three {
+  right: 7%;
+  --flower-scale: 0.8;
+  --flower-rotation: 5deg;
+}
+@keyframes spiderLilySway {
+  0% {
+    transform: scale(var(--flower-scale)) rotate(calc(var(--flower-rotation) - 2deg));
+  }
+  100% {
+    transform: scale(var(--flower-scale)) rotate(calc(var(--flower-rotation) + 2deg));
+  }
+}

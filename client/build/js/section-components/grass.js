@@ -13,3 +13,11 @@ for (let i = 0; i < 300; i++) {
   blade.style.animationDelay = `${delay}s`;
   grass.appendChild(blade);
 }
+
+const spiderLilies = document.querySelectorAll(".spider-lily");
+spiderLilies.forEach((flower) => {
+  const duration = Math.random() * 2 + 2;
+  const delay = Math.random() * 2;
+  flower.style.animationDuration = `${duration}s`;
+  flower.style.animationDelay = `${delay}s`;
+});
