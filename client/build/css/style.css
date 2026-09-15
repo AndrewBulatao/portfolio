@@ -245,8 +245,7 @@ section.show {
 }
 
 #home h1,
-#about h1,
-#projects h1 {
+#about h1 {
   margin: 0 0 10px 0;
   position: static;
 }
@@ -267,7 +266,7 @@ section.show {
   min-height: 100vh;
   box-sizing: border-box;
   padding: 80px 20px;
-  background: linear-gradient(to bottom,#0b1628,#18323a);
+  background: linear-gradient(to bottom,#030a12,#18323a);
 }
 
 #contact {

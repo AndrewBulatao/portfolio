@@ -1,4 +1,35 @@
 /* Picture */
+#home .home-text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #fff8df;
+  -webkit-text-stroke: 1px #fff8df;
+}
+#home .home-text p {
+  font-size: 2rem;
+  color: #fff4df;
+  -webkit-text-stroke: 0.5px #fff4df;
+}
+
+#home .view-work {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 11px 22px;
+  border: 1px solid rgba(255,216,90,0.7);
+  border-radius: 8px;
+  background: rgba(255,216,90,0.15);
+  color: #fff4df;
+  font-weight: 700;
+  -webkit-text-stroke: 0.5px #fff4df;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+#home .view-work:hover {
+  background: rgba(255,216,90,0.3);
+  transform: translateY(-2px);
+}
+
+
 .image-placeholder {
   width: 300px;
   border-radius: 10px;
