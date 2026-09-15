@@ -1,4 +1,14 @@
 /* Pictures */
+
+#about {
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom,#344f5c 0%,#263b4a 35%,#18323a 65%,#030a12 100%);
+}
+
 #about h1 {
   position: relative;
   color: #f5bd72;
@@ -182,36 +192,6 @@
   }
 }
 
-/* Mountains */
-.mountains {
-  position: absolute;
-  bottom: -22.5vh;
-  left: 0;
-  width: 100%;
-  height: 30vh;
-  z-index: 0;
-  pointer-events: none;
-}
-.mountains::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-  width: 65%;
-  height: 100%;
-  background: linear-gradient(to bottom, #0a2032, #030a12);
-  border-radius: 100% 300% 0 0;
-}
-.mountains::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -15%;
-  width: 75%;
-  height: 80%;
-  background: linear-gradient(to bottom, #0a2032, #030a12);
-  border-radius: 300% 100% 0 0;
-}
 
 /* Smaller screen */
 @media (max-width: 1300px) {

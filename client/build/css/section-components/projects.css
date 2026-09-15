@@ -1,4 +1,14 @@
-/* Projects Section */
+/* Project style */
+#projects {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 80px 20px;
+  overflow: hidden;
+  background: linear-gradient(to bottom,#030a12 0%,#0b1628 30%,#18323a 50%,#6b5360 72%,#d47b70 88%,#f2a06b 100%);
+}
 #projects > h1 {
   margin: 0 0 50px 0;
   position: relative;
@@ -106,7 +116,7 @@
   transform: translateY(-2px);
 }
 
-
+/* Project containers */
 .projects-container-whole {
   width: 90vw;
   max-width: 1200px;
@@ -151,4 +161,114 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Project components */
+#projects .stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+#projects .star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 3s infinite ease-in-out;
+}
+#projects > h1,
+#projects .projects-container-whole {
+  position: relative;
+  z-index: 2;
+}
+
+.project-cloud {
+  position: absolute;
+  width: 300px;
+  height: 35px;
+  border-radius: 30px;
+  background: rgba(255,195,185,1);
+  filter: blur(2px);
+  z-index: 1;
+  pointer-events: none;
+}
+.project-cloud::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  left: 35px;
+  bottom: 0;
+  border-radius: 50%;
+  background: inherit;
+  box-shadow: 55px -15px 0 5px rgba(255,195,185,1),110px 0 0 15px rgba(255,195,185,1),175px -10px 0 5px rgba(255,195,185,1);
+}
+.project-cloud::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 90px;
+  left: 110px;
+  bottom: 0;
+  border-radius: 50%;
+  background: inherit;
+}
+.project-cloud-one {
+  width: 320px;
+  top: 35%;
+  left: -350px;
+  animation: projectCloudMove 45s linear infinite;
+}
+.project-cloud-two {
+  width: 400px;
+  top: 48%;
+  left: -450px;
+  animation: projectCloudMove 60s linear infinite;
+}
+.project-cloud-three {
+  width: 260px;
+  top: 60%;
+  left: -300px;
+  animation: projectCloudMove 50s linear infinite;
+}
+@keyframes projectCloudMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100vw + 600px));
+  }
+}
+
+/* Mountains */
+#projects .mountains {
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 1;
+  pointer-events: none;
+}
+#projects .mountains::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 65%;
+  height: 100%;
+  background: linear-gradient(to bottom,#3a3548 0%,#172638 35%,#0a1725 70%,#030a12 100%);
+  border-radius: 100% 300% 0 0;
+}
+#projects .mountains::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  width: 75%;
+  height: 80%;
+  background: linear-gradient(to bottom,#403447 0%,#172638 35%,#0a1725 70%,#030a12 100%);
+  border-radius: 300% 100% 0 0;
 }

@@ -118,8 +118,8 @@
   background: linear-gradient(
     to bottom,
     rgba(38, 59, 74, 0.2),
-    #263b4a 45%,
-    #0b1628 100%
+    #344f5c 45%,
+    #263b4a 100%
   );
   z-index: 1;
 }
@@ -234,3 +234,4 @@
     transform: translateX(calc(100vw + 500px));
   }
 }
+
