@@ -153,11 +153,14 @@
 }
 .project-image {
   width: 50vw;
-  height: 40vh;
-  background: rgba(96, 148, 230, 0.45);
-  border: 2px solid white;
+  aspect-ratio: 997 / 499;
+  background: rgba(11,22,40,0.45);
+  border: 1px solid rgba(245,189,114,0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(245,189,114,0.15);
   overflow: hidden;
 }
+
 .project-image img {
   width: 100%;
   height: 100%;
