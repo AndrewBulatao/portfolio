@@ -20,10 +20,13 @@ html {
 body {
   margin: 0;
   font-family: 'Ghibli', 'Times New Roman', Times, serif;
-  cursor: url('../images/ghibli_photos/bird_resized_spirit.png') 16 16, auto;
+  cursor: none !important;
   background-color: #fef6e4;
   color: white;
   overflow-x: hidden;
+}
+* {
+  cursor: none !important;
 }
 
 /* PARAGRAPHS (FIXED) */
@@ -33,13 +36,7 @@ p {
   line-height: 1.6;
 }
 
-/* HOVER CURSORS */
-a:hover,
-button:hover,
-.project-card:hover,
-.sun:hover {
-  cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
-}
+
 
 .main-content {
   margin: 0;
@@ -247,4 +244,59 @@ section {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff1a8;
+  box-shadow: 0 0 6px #fff1a8,0 0 15px #f5bd72,0 0 30px rgba(245,189,114,0.7);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%,-50%);
+  transition: background 0.4s ease,box-shadow 0.4s ease;
+}
+.custom-cursor.home-cursor {
+  background: #fff1a8;
+  box-shadow: 0 0 6px #fff1a8,0 0 15px #ffd85a,0 0 30px rgba(255,216,90,0.7);
+}
+.custom-cursor.about-cursor {
+  background: #bde7ff;
+  box-shadow: 0 0 6px #bde7ff,0 0 15px #72c9dc,0 0 30px rgba(114,201,220,0.7);
+}
+.custom-cursor.projects-cursor {
+  background: #e7c6ff;
+  box-shadow: 0 0 6px #e7c6ff,0 0 15px #9b72dc,0 0 30px rgba(155,114,220,0.7);
+}
+.custom-cursor.contact-cursor {
+  background: #b8f5c8;
+  box-shadow: 0 0 6px #b8f5c8,0 0 15px #62c982,0 0 30px rgba(98,201,130,0.7);
+}
+.custom-cursor.calcifer-cursor {
+  background: #8fe8ff;
+  box-shadow: 0 0 6px #8fe8ff,0 0 15px #52cce8,0 0 30px rgba(82,204,232,0.7);
+}
+
+/* Hover Cursor */
+.custom-cursor.home-cursor.hover {
+  background: #8f72ff;
+  box-shadow: 0 0 6px #8f72ff,0 0 15px #7655e8,0 0 30px rgba(118,85,232,0.7);
+}
+.custom-cursor.about-cursor.hover {
+  background: #ffb56b;
+  box-shadow: 0 0 6px #ffb56b,0 0 15px #e89045,0 0 30px rgba(232,144,69,0.7);
+}
+.custom-cursor.projects-cursor.hover {
+  background: #dce7e3;
+  box-shadow: 0 0 6px #dce7e3,0 0 15px #aebdc2,0 0 30px rgba(174,189,194,0.7);
+}
+.custom-cursor.contact-cursor.hover {
+  background: #f5a8c0;
+  box-shadow: 0 0 6px #f5a8c0,0 0 15px #df7fa1,0 0 30px rgba(223,127,161,0.7);
+}
+.custom-cursor.calcifer-cursor.hover {
+  background: #8f72ff;
+  box-shadow: 0 0 6px #8f72ff,0 0 15px #7655e8,0 0 30px rgba(118,85,232,0.7);
 }

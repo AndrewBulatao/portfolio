@@ -3,45 +3,35 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-
   width: 320px;
   height: 450px;
-
   background: rgba(83, 69, 69, 0.95);
-
   border-radius: 20px;
-
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
-
-  z-index: 9999;
+  z-index: 9000;
+  font-family: inherit;
 }
-
 /* Header */
 .chatbot-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-
   font-size: 1.2rem;
   font-weight: bold;
-
   background: #9d3d13;
   color: white;
 }
-
 #minimize-btn {
   background: none;
   border: none;
   color: white;
   font-size: 1.4rem;
+  font-family: inherit;
 }
-
 /* Messages */
 .chatbot-messages {
   flex: 1;
@@ -49,21 +39,16 @@
   padding: 15px;
   overflow-y: auto;
 }
-
 /* AI MESSAGE */
 .ai-message {
   background: #bab2b2;
   color: black;
-
   padding: 10px;
   border-radius: 12px;
-
   margin-bottom: 10px;
-
   width: fit-content;
   max-width: 80%;
 }
-
 /* INPUT AREA */
 .chatbot-input-area {
   display: flex;
@@ -71,19 +56,14 @@
   gap: 10px;
   border-top: 1px solid #ddd;
 }
-
-.chatbot-input-area button:hover {
-  cursor: url('../images/ghibli_photos/mouse_resized_spirit.png') 16 16, pointer;
-}
-
 /* INPUT */
 .chatbot-input-area input {
   flex: 1;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #bab2b2;
+  font-family: inherit;
 }
-
 /* Send button */
 .chatbot-input-area button {
   padding: 10px 15px;
@@ -92,29 +72,23 @@
   cursor: pointer;
   background: #9d3d13;
   color: white;
+  font-family: inherit;
 }
-
 /* User Messages */
 .user-message {
   background: #9d3d13;
   color: white;
-
   padding: 10px;
   border-radius: 12px;
-
   margin-bottom: 10px;
-
   width: fit-content;
   max-width: 80%;
-
   margin-left: auto;
 }
-
 /*minimized*/
 .chatbot-container.minimized {
   height: 60px;
 }
-
 .chatbot-container.minimized .chatbot-messages,
 .chatbot-container.minimized .chatbot-input-area {
   display: none;

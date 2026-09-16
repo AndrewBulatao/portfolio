@@ -19,9 +19,7 @@ function createBubble() {
   const control2Y = endY + areaRect.height * (Math.random() * 0.3 + 0.15);
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
-  bubble.addEventListener("click",() => {
-    explodeBubble(bubble);
-  });
+
   bubbleArea.appendChild(bubble);
   const startTime = performance.now();
   function animateBubble(currentTime) {
@@ -41,36 +39,6 @@ function createBubble() {
   }
   requestAnimationFrame(animateBubble);
 }
-function explodeBubble(bubble) {
-  if (bubble.classList.contains("exploding")) {
-    return;
-  }
-  bubble.classList.add("exploding");
-  const rect = bubble.getBoundingClientRect();
-  const areaRect = bubbleArea.getBoundingClientRect();
-  const centerX = rect.left + rect.width / 2 - areaRect.left;
-  const centerY = rect.top + rect.height / 2 - areaRect.top;
-  for (let i = 0; i < 7; i++) {
-    const particle = document.createElement("span");
-    particle.classList.add("about-particle");
-    const angle = (Math.PI * 2 / 7) * i + Math.random() * 0.4;
-    const distance = Math.random() * 35 + 25;
-    const particleX = Math.cos(angle) * distance;
-    const particleY = Math.sin(angle) * distance;
-    const particleDuration = Math.random() * 250 + 350;
-    particle.style.left = `${centerX}px`;
-    particle.style.top = `${centerY}px`;
-    particle.style.setProperty("--particle-x",`${particleX}px`);
-    particle.style.setProperty("--particle-y",`${particleY}px`);
-    particle.style.setProperty("--particle-duration",`${particleDuration}ms`);
-    bubbleArea.appendChild(particle);
-    setTimeout(() => {
-      particle.remove();
-    },particleDuration);
-  }
-  setTimeout(() => {
-    bubble.remove();
-  },450);
-}
-setInterval(createBubble,1000);
+
+setInterval(createBubble,2000);
 
