@@ -6,12 +6,17 @@ function createBubble() {
   const size = Math.random() * 35 + 20;
   const duration = Math.random() * 3 + 5;
   const side = Math.random() < 0.5 ? "left" : "right";
+  const startHeight = Math.random() * 70 + 5;
+  const curveDistance = Math.random() * 25 + 25;
+  const riseHeight = Math.random() * 30 + 70;
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
-  bubble.style.bottom = `${Math.random() * 20 + 5}%`;
+  bubble.style.bottom = `${startHeight}%`;
   bubble.style[side] = `-${size}px`;
   bubble.style.setProperty("--bubble-duration",`${duration}s`);
   bubble.style.setProperty("--bubble-direction",side === "left" ? 1 : -1);
+  bubble.style.setProperty("--curve-distance",`${curveDistance}vw`);
+  bubble.style.setProperty("--rise-height",`${riseHeight}vh`);
   bubbleArea.appendChild(bubble);
   setTimeout(() => {
     explodeBubble(bubble);
