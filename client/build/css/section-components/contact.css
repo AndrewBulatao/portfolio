@@ -210,9 +210,10 @@
 #contact .grass-blade {
   position: absolute;
   bottom: 0;
-  width: 4px;
-  background: #18351d;
-  border-radius: 100% 0 0 0;
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(to top,#07150e,#18351d,#25411d);
+  border-radius: 100% 100% 0 0;
   transform-origin: bottom center;
   animation: grassSway 3s ease-in-out infinite alternate;
 }
@@ -258,38 +259,61 @@
   position: absolute;
   left: 50%;
   bottom: 145px;
-  width: 180px;
-  height: 100px;
+  width: 190px;
+  height: 120px;
   transform: translateX(-50%);
 }
 #contact .spider-lily__petals span {
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 13px;
-  height: 90px;
+  width: 10px;
+  height: 105px;
   transform-origin: 50% 100%;
-  border-radius: 100% 100% 30% 30%;
-  background: linear-gradient(to top,#3d1118,#641725 70%,#852536);
+  border-radius: 100% 100% 35% 35%;
+  background: linear-gradient(to top,#54141f,#641725 70%,#852536);
   box-shadow: 0 0 5px rgba(120,25,45,0.2);
 }
+#contact .spider-lily__petals span::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 18px;
+  height: 30px;
+  transform: translateX(-50%) rotate(-15deg);
+  border-radius: 50%;
+  background: #852536;
+}
 #contact .spider-lily__petals span:nth-child(1) {
-  transform: translateX(-50%) rotate(-75deg);
+  transform: translateX(-50%) rotate(-80deg);
 }
 #contact .spider-lily__petals span:nth-child(2) {
   transform: translateX(-50%) rotate(-48deg);
 }
 #contact .spider-lily__petals span:nth-child(3) {
-  transform: translateX(-50%) rotate(-20deg);
+  transform: translateX(-50%) rotate(-16deg);
 }
 #contact .spider-lily__petals span:nth-child(4) {
-  transform: translateX(-50%) rotate(20deg);
+  transform: translateX(-50%) rotate(16deg);
 }
 #contact .spider-lily__petals span:nth-child(5) {
   transform: translateX(-50%) rotate(48deg);
 }
 #contact .spider-lily__petals span:nth-child(6) {
-  transform: translateX(-50%) rotate(75deg);
+  transform: translateX(-50%) rotate(80deg);
+}
+
+#contact .spider-lily__petals span::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 16px;
+  height: 75px;
+  transform: translateX(-50%) rotate(10deg);
+  border-right: 3px solid rgba(163, 25, 51, 0.8);
+  border-radius: 50%;
 }
 #contact .spider-lily__stamens {
   position: absolute;
@@ -374,4 +398,59 @@
   100% {
     transform: scale(var(--flower-scale)) rotate(calc(var(--flower-rotation) + 2deg));
   }
+}
+
+#contact .forest {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+#contact .forest-tree {
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom center;
+  filter: blur(3px);
+}
+#contact .tree-trunk {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 65%;
+  transform: translateX(-50%);
+  background: #050d08;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+#contact .tree-trunk::before,
+#contact .tree-trunk::after {
+  content: "";
+  position: absolute;
+  bottom: 42%;
+  width: 8px;
+  height: 110px;
+  background: #050d08;
+  border-radius: 100%;
+}
+#contact .tree-trunk::before {
+  right: 0;
+  transform: rotate(35deg);
+  transform-origin: bottom center;
+}
+#contact .tree-trunk::after {
+  left: 0;
+  transform: rotate(-35deg);
+  transform-origin: bottom center;
+}
+#contact .tree-foliage {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  border-radius: 45% 55% 35% 65%;
+  background: #07150e;
+  filter: blur(8px);
 }
