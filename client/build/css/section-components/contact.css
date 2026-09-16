@@ -6,6 +6,7 @@
   overflow: hidden;
   background: linear-gradient(to bottom,#030a12 0%,#0b1712 30%,#122317 65%,#1b301c 100%);
 }
+
 .contact-content {
   position: relative;
   z-index: 2;

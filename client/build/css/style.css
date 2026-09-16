@@ -46,58 +46,19 @@ button:hover,
   padding: 0;
 }
 
-/* NAVBAR */
+/* Nav Bar */
 .header {
   position: sticky;
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(10, 20, 35, 0.85);
+  background: var(--nav-background-color,rgba(10,20,35,0.85));
   backdrop-filter: blur(10px);
   padding: 15px 20px;
   margin-bottom: -50px;
   z-index: 1000;
   overflow: hidden;
-}
-
-.nav {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
-.nav-link {
-  text-decoration: none;
-  color: #dce7e3;
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-}
-.nav-link::after,
-.nav-link::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #88c9a1;
-  left: 0;
-  transform: scaleX(0);
-  transition: transform 0.4s ease-out;
-}
-.nav-link::after {
-  bottom: -5px;
-  transform-origin: right;
-}
-.nav-link::before {
-  top: -5px;
-  transform-origin: left;
-}
-.nav-link:hover::after,
-.nav-link:hover::before {
-  transform: scaleX(1);
+  transition: background-color 0.8s ease;
 }
 
 
@@ -111,36 +72,33 @@ button:hover,
   position: relative;
   z-index: 2;
 }
-
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: var(--nav-text-color,#ffffff);
   font-weight: bold;
   position: relative;
   display: inline-block;
+  transition: color 0.8s ease;
 }
-
 .nav-link::after,
 .nav-link::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #929894;
+  background: var(--nav-accent-color,#929894);
   left: 0;
   transform: scaleX(0);
-  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out,background-color 0.8s ease;
 }
 .nav-link::after {
   bottom: -5px;
   transform-origin: right;
 }
-
 .nav-link::before {
   top: -5px;
   transform-origin: left;
 }
-
 .nav-link:hover::after,
 .nav-link:hover::before {
   transform: scaleX(1);
@@ -152,18 +110,8 @@ section {
   padding: 80px 20px;      
   display: flex;
   justify-content: center;
-  
-  /* For section fade in
-    opacity: 0;
-    transition: opacity .5s ease, transform 0.8s ease;
-    */
+
 }
-/* For section fade in 
-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-*/
 
 /* BACKGROUNDS */
 

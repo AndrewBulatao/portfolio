@@ -9,6 +9,7 @@
   overflow: hidden;
   background: linear-gradient(to bottom,#030a12 0%,#0b1628 30%,#18323a 50%,#6b5360 72%,#d47b70 88%,#f2a06b 100%);
 }
+
 #projects > h1 {
   margin: 0 0 50px 0;
   position: relative;
