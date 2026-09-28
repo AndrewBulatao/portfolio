@@ -73,56 +73,69 @@ the statistical analysis or invent game knowledge.
 PROJECT REPOSITORY:
 https://github.com/AndrewBulatao/tft_analyzer
 
+PROJECT: 2D FIGHTING GAME
+
+Andrew worked on a 2D local multiplayer fighting game as part of a
+team during a 2024 hackathon.
+
+- Developed player-controlled characters and combat mechanics.
+- Implemented local multiplayer gameplay.
+- Built the game using Python and the Arcade library.
+- Worked as part of a team during the hackathon.
+
+TECHNOLOGIES USED:
+- Python
+- Arcade
+- Game Development
+- Local Multiplayer
+
+PROJECT DESCRIPTION:
+A 2D fighting game developed as a team project during a 2024 hackathon.
+The game features player-controlled characters, combat mechanics, and
+local multiplayer gameplay.
+
 PROJECT: POLARIS — PREDICTIVE POSITIONING
 
-Andrew worked on Polaris, an indoor positioning research project
-focused on developing predictive positioning algorithms that can
-track users using smartphone sensors without relying on GPS, Wi-Fi,
-or physical beacons.
+Polaris was a senior design research project focused on indoor
+positioning using smartphone sensor data. The project explored
+predictive positioning without relying on GPS, Wi-Fi, or physical
+beacons.
 
 ANDREW'S ROLE:
-Andrew primarily worked on the filtering and signal-processing
-portion of the project.
 
-His work focused on processing noisy iOS IMU sensor data and
-improving the performance and stability of the filtering system.
+Andrew primarily contributed to the filtering and signal-processing
+portion of the project. His work focused on processing noisy iOS
+IMU sensor data and improving the performance and stability of the
+filtering system.
 
-WORK AND CONTRIBUTIONS:
+CONTRIBUTIONS:
+
 - Developed Kalman filters to estimate acceleration and jerk from
   noisy iOS IMU sensor data.
 - Developed Rao-Blackwellized particle filters (RBPFs) for sensor
   data estimation.
 - Vectorized Kalman filter operations using NumPy, reducing RBPF
-  runtime by 76.7%.
+  runtime by approximately 76.7%.
 - Tuned resampling thresholds and latent scale factors to maintain
   particle diversity and improve model stability.
 - Expanded the filtering system from a 1D implementation to a 2D
-  implementation by adapting particle representations for
-  independent axis scaling.
+  implementation.
 - Applied low-pass filtering to reduce high-frequency noise and
   spikes in raw IMU measurements.
 - Investigated sensor drift and variability caused by differences
   in walking patterns, user height, and phone orientation.
 
-TECHNOLOGIES AND CONCEPTS:
-- Python
-- NumPy
-- Machine Learning
-- Signal Processing
-- Kalman Filtering
-- Rao-Blackwellized Particle Filters
-- Particle Filters
-- iOS IMU sensor data
+TECHNOLOGIES:
 
-IMPORTANT:
+Python, NumPy, Signal Processing, Kalman Filtering,
+Rao-Blackwellized Particle Filters, Particle Filters, iOS IMU
+Sensor Data
+
+SCOPE:
+
 Andrew primarily contributed to the filtering and signal-processing
-portion of Polaris. Do not claim that Andrew personally developed
-every component of the overall positioning system.
-
-PROJECT DESCRIPTION:
-Polaris is an indoor positioning research project. Its goal is to
-explore predictive positioning using smartphone sensor data rather
-than relying on GPS, Wi-Fi, or physical beacons.
+components of Polaris. He did not personally develop every component
+of the overall positioning system.
 
 PROJECT: PERSONAL PORTFOLIO WEBSITE
 
