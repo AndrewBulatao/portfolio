@@ -244,8 +244,8 @@
 
     <div class="contact-content">
       <h1>Get in touch!</h1>
-      <form class="contact-form">
-        <div class="form-group">
+      <form id="contact-form" class="contact-form">
+          <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required>
         </div>
@@ -258,6 +258,7 @@
           <textarea id="message" name="message" placeholder="Your message" required></textarea>
         </div>
         <button type="submit">Send Message</button>
+        <p id="contact-status"></p>
       </form>
       <div class="socials">
         <a href="https://github.com/AndrewBulatao" target="_blank">
@@ -282,6 +283,7 @@
   <script src="js/chatbot.js"></script>
   <script src="js/scrollController.js"></script>
   <script src="js/navBar.js"></script>
+  <script src="js/contact.js"></script>
 
   <script src="js/section-components/stars.js"></script>
   <script src="js/section-components/shootingStar.js"></script>
@@ -290,7 +292,6 @@
   <script src="js/section-components/clouds.js"></script>
   <script src="js/section-components/fireFlies.js"></script>
   <script src="js/section-components/grass.js"></script>
-  <script src="js/section-components/bubbles.js"></script>
   <script src="js/section-components/lightRays.js"></script>
 
   <script src="https://unpkg.com/github-contrib-graph@3.1.1/dist/browser.global.js"></script>

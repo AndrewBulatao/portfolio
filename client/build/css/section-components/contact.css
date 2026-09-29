@@ -85,6 +85,25 @@
   z-index: 2;
   margin-top: 30px;
 }
+
+#contact-status {
+  margin-top: -1vh;
+  padding: 1px;
+  text-align: center;
+  font-size: 1rem;
+  color: #dce7c5;
+  background: rgba(5,20,12,0.8);
+  border: 1px solid #dce7c5;
+  border-radius: 8px;
+}
+
+#contact-status.success {
+  color: #b8d89b;
+}
+
+#contact-status.error {
+  color: #d98b8b;
+}
 /* Social Buttons*/
 .socials {
   display: flex;
